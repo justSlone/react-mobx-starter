@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, Container, NumberDisplay } from "./styles";
+import { getClassNames } from "./Home.classNames";
 
 interface HomeProps {
   counter: number;
@@ -10,13 +10,18 @@ interface HomeProps {
 export class Home extends React.Component<HomeProps, {}> {
   render() {
     const { counter, increment, decrement } = this.props;
+    const { container, button, numberDisplay } = getClassNames();
 
     return (
-      <Container>
-        <Button onClick={decrement}>-</Button>
-        <NumberDisplay>{counter}</NumberDisplay>
-        <Button onClick={increment}>+</Button>
-      </Container>
+      <div className={container}>
+        <button className={button} onClick={decrement}>
+          -
+        </button>
+        <div className={numberDisplay}>{counter}</div>
+        <button className={button} onClick={increment}>
+          +
+        </button>
+      </div>
     );
   }
 }

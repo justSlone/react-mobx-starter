@@ -3,6 +3,8 @@ import * as ReactDOM from "react-dom";
 import { Provider } from "mobx-react";
 import { App } from "./App";
 import { ApplicationStore } from "./stores";
+import "promise/polyfill";
+import "whatwg-fetch";
 
 const applicationStore = new ApplicationStore();
 

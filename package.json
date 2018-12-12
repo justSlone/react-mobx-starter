@@ -18,19 +18,25 @@
   "author": "Daniel Bischoff",
   "license": "MIT",
   "dependencies": {
+    "@uifabric/merge-styles": "^6.15.0",
+    "@uifabric/utilities": "^6.27.0",
     "mobx": "^5.6.0",
     "mobx-react": "^5.3.6",
+    "promise": "^8.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "styled-components": "^4.1.1"
+    "styled-components": "^4.1.1",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.15",
     "@types/jest": "^23.3.9",
+    "@types/promise": "^7.1.30",
     "@types/react": "^16.7.4",
     "@types/react-dom": "^16.0.9",
     "@types/styled-components": "^4.1.0",
     "@types/webpack-env": "^1.13.6",
+    "@types/whatwg-fetch": "0.0.33",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "file-loader": "^2.0.0",
