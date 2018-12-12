@@ -44,7 +44,8 @@ const config = {
       template: "src/index.html",
       title: "React Mobx Starter",
       inject: "body"
-    })
+    }),
+    new webpack.EnvironmentPlugin(["GIPHY_API_KEY"])
   ]
 };
 

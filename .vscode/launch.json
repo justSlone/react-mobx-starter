@@ -40,6 +40,15 @@
       "sourceMapPathOverrides": {
         "webpack:///./*": "${workspaceRoot}/*"
       }
+    },
+    {
+      "name": "Launch localhost",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:9000",
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${workspaceRoot}/*"
+      }
     }
   ]
 }
